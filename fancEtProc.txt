@@ -1,0 +1,55 @@
+procedure calcuPuissance (n entier par val ,x entier par val,puissance entier par ref)
+debut 
+puiss entier 
+i entier 
+
+
+n <-- lireval()
+x <-- lireval()
+
+pour (i = 0 ;i <= x ) Faire
+	puiss = n*puiss
+	i = i + 1 
+fin pour	
+
+puissance <-- puiss
+fin
+
+-----------------------------
+
+fonction calcuPuissance(n entier par val  ,x entier val): entier
+puissance entier 
+i entier 
+i <-- 0
+n <-- lireval()
+c<-- lireval()
+
+pour (i <= x )
+	puissance = n*puiss
+	i = i + 1 
+	
+fin tantque
+return puissance 
+
+----------------------------------------
+fonction lireval():entier
+	val entier 
+	Ecrite "enter val positive"
+	lire val
+	tantque(val < 0 )
+		Ecrir "le valueur negative "
+		lire val
+	fin tantque
+	return val
+----------------------------------------------
+Algorithme Calculepussiance 
+debut 
+n entier 
+x entier 
+pu  entier
+pu <-- 0
+lire n,x 
+calcuPuissance(n,x,pu)
+calcuPuissance(n,x)
+ecrire "lalala"+pu
+	
